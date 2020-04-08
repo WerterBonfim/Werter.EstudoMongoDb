@@ -9,7 +9,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositorio\" />
+    <Compile Remove="Repositorio\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Repositorio\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Repositorio\**" />
   </ItemGroup>
 
 </Project>

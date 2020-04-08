@@ -1,6 +1,6 @@
-﻿using MongoDB.Driver;
+using MongoDB.Driver;
 
-namespace Werter.EstudoMongoDb.Infra
+namespace Werter.EstudoMongoDb.ConsoleApp.Suporte
 {
     public sealed class SuporteColecao<T> : SuporteDb
     {
