@@ -12,6 +12,11 @@ namespace Werter.EstudoMongoDb.ConsoleApp.Suporte
             Cliente = new MongoClient(stringDeConexao);            
         }
 
+        public SuporteDb(MongoClientSettings settings)
+        {
+            Cliente = new MongoClient(settings);
+        }
+
         public SuporteDb DefinirBanco(string nome)
         {
             Banco = Cliente.GetDatabase(nome);

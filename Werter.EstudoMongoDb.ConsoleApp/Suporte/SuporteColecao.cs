@@ -11,6 +11,11 @@ namespace Werter.EstudoMongoDb.ConsoleApp.Suporte
             DefinirBanco(nomeBanco);            
         }
 
+        public SuporteColecao(MongoClientSettings conf, string nomeBanco) : base(conf)
+        {
+            DefinirBanco(nomeBanco);
+        }
+
         public IMongoCollection<T> DefinirColecao(string nome)
         {
             Colecao = Banco.GetCollection<T>(nome);
