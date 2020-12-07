@@ -13,7 +13,7 @@ namespace Werter.EstudoMongoDb.ConsoleApp.Suporte
     {
         protected IMongoCollection<BsonDocument> Pessoas { get; }
         private static string _diretorioDeLog = "/home/werter/Documents/dev-logs/mongodb";
-        private static string _nomeLog = "mongo.log";
+        private static string _nomeLog = "mongo.json";
         private readonly string _stringDeConexao = "mongodb://mongo:!123Senha@localhost:27017";
 
         protected SuporteBase(bool logarInformacoes = true)
