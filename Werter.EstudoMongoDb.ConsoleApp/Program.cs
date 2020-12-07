@@ -1,4 +1,5 @@
 ﻿using System;
+using Werter.EstudoMongoDb.ConsoleApp.Suporte;
 
 
 namespace Werter.EstudoMongoDb.ConsoleApp
@@ -8,12 +9,15 @@ namespace Werter.EstudoMongoDb.ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Werter Bonfim - Estudos MongoDb");
-
-            // new InserindoDocumento()
-            //     .TestarExemplos();
             
-            new AlterandoDocumentos()
+            
+            //SuporteBase.DefinirDiretorioDeLog("/home/werter/Documents/dev-logs/mongodb");
+
+            new InserindoDocumento()
                 .TestarExemplos();
+            
+            // new AlterandoDocumentos()
+            //     .TestarExemplos();
 
         }
 
