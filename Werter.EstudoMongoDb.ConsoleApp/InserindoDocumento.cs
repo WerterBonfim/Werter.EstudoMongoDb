@@ -5,6 +5,8 @@ namespace Werter.EstudoMongoDb.ConsoleApp
 {
     public sealed class InserindoDocumento : SuporteBase
     {
+        
+        
         private void Insert()
         {
             
@@ -75,7 +77,7 @@ namespace Werter.EstudoMongoDb.ConsoleApp
 
         public override void TestarExemplos()
         {
-            //Insert();
+            Insert();
             //Save();
         }
     }
