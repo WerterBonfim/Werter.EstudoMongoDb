@@ -9,4 +9,13 @@
     <PackageReference Include="MongoDB.Driver" Version="2.11.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositorio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Suporte\SuporteColecao.cs" />
+    <Compile Remove="Suporte\SuporteBase.cs" />
+  </ItemGroup>
+
 </Project>

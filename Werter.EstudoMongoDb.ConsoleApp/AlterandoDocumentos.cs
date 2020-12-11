@@ -1,4 +1,3 @@
-using System.Linq;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using Werter.EstudoMongoDb.ConsoleApp.Suporte;
@@ -6,7 +5,7 @@ using B = MongoDB.Driver.Builders<MongoDB.Bson.BsonDocument>;
 
 namespace Werter.EstudoMongoDb.ConsoleApp
 {
-    public class AlterandoDocumentos : SuporteBase
+    public class AlterandoDocumentos : SuporteDb, ICenarioDeEstudo
     {
         private void Update()
         {
@@ -82,10 +81,13 @@ namespace Werter.EstudoMongoDb.ConsoleApp
 
         #endregion
 
-        public override void TestarExemplos()
+
+        public void ExecutarExemplos()
         {
-            //Update();
+            InserirExemplosParaUpdate();
+            Update();
             UpdateCom_upset_e_multi();
         }
+        
     }
 }

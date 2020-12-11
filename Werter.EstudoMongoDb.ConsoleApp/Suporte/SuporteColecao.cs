@@ -2,19 +2,14 @@ using MongoDB.Driver;
 
 namespace Werter.EstudoMongoDb.ConsoleApp.Suporte
 {
-    public sealed class SuporteColecao<T> : SuporteDb
+    public sealed class SuporteColecao<T> 
     {
-        public IMongoCollection<T> Colecao { get; private set; }
-
-        public SuporteColecao(string stringDeConexao, string nomeBanco) : base(stringDeConexao)
+        public SuporteColecao Definir(string nomeBanco) : base()
         {
-            DefinirBanco(nomeBanco);            
+            DefinirBanco(nomeBanco);      
+            return this
         }
 
-        public SuporteColecao(MongoClientSettings conf, string nomeBanco) : base(conf)
-        {
-            DefinirBanco(nomeBanco);
-        }
 
         public IMongoCollection<T> DefinirColecao(string nome)
         {

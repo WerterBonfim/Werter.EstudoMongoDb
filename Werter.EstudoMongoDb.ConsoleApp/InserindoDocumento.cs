@@ -3,7 +3,7 @@ using Werter.EstudoMongoDb.ConsoleApp.Suporte;
 
 namespace Werter.EstudoMongoDb.ConsoleApp
 {
-    public sealed class InserindoDocumento : SuporteBase
+    public sealed class InserindoDocumento : SuporteDb, ICenarioDeEstudo
     {
         
         
@@ -75,7 +75,7 @@ namespace Werter.EstudoMongoDb.ConsoleApp
 
         }
 
-        public override void TestarExemplos()
+        public void ExecutarExemplos()
         {
             Insert();
             //Save();
