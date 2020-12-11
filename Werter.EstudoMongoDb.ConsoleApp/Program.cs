@@ -21,8 +21,9 @@ namespace Werter.EstudoMongoDb.ConsoleApp
             //SuporteBase.DefinirDiretorioDeLog("/home/werter/Documents/dev-logs/mongodb");
 
             ICenarioDeEstudo[] cenarios = {
-                new InserindoDocumento(),
-                new AlterandoDocumentos()
+                //new InserindoDocumento(),
+                //new AlterandoDocumentos(),
+                new CriandoCollecoes()
             };
 
             foreach (var cenario in cenarios)

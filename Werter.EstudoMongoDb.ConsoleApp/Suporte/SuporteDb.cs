@@ -8,7 +8,7 @@ namespace Werter.EstudoMongoDb.ConsoleApp.Suporte
     {
         private IMongoClient Cliente { get; }
         private readonly SuporteLog _suporteLog;
-        private IMongoDatabase Banco { get; set; }
+        protected IMongoDatabase Banco { get; set; }
 
         protected IMongoCollection<BsonDocument> Pessoas { get; set; }
 
@@ -20,7 +20,7 @@ namespace Werter.EstudoMongoDb.ConsoleApp.Suporte
                 new MongoClient(MontarStringDeConexao()) : 
                 new MongoClient(MontarConexaoComLog());
 
-            DefinirBanco("banco-csharp");
+            DefinirBanco("rascunho-csharp");
             MontarColecoes();
         }
 
